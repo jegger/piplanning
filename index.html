@@ -9,7 +9,7 @@
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="js/contact.js"></script>
 
     <div id="banner">
       <img src="images/logos/logowhite.png" class="logo">
@@ -124,21 +124,31 @@
     <div class="requestbox" id="request">
       <h2>ANFRAGE</h2>
       <h3>Gerne unterbreiten wir Ihnen ein speziell auf Ihre Situation zugeschnittenes Angebot</h3>
-      <form>
+      
+      <form id="contact-form" >
+        <div class="messages">
+        </div>
 
-        <div class="form-group">
+        <div class="controls">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required" data-error="Bitte geben Sie einen Namen an.">
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-Mail" required="required" data-error="Bitte geben Sie eine E-Mail Adresse an.">
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Telefonnummer">
+            <div class="help-block with-errors"></div>
+          </div>
           
-          <input type="text" class="form-control" id="name" placeholder="Name">
+          <button type="submit">anfragen</button>
         </div>
-        <div class="form-group">
-          
-          <input type="email" class="form-control" id="EMail" aria-describedby="emailHelp" placeholder="E-Mail">
-        </div>
-        <div class="form-group">
-          <input type="tel" class="form-control" id="phone" placeholder="Telefonnummer">
-        </div>
-        <button type="submit">anfragen</button>
       </form>
+
     </div>
 
 
