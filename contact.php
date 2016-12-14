@@ -2,7 +2,7 @@
 
 // configure
 $from = 'piplanning@piplanning.ch'; 
-$sendTo = 'dominique.burnand@rentouch.ch';
+$sendTo = 'sticky@piplanning.ch';
 $subject = 'Anfrage PI Planning';
 $fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email'); // array variable name => Text to appear in email
 $okMessage = 'Anfrage wurde gesendet. Wir werden uns bei Ihnen melden';
@@ -12,7 +12,7 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
 
 try
 {
-    $emailText = "You have new message from contact form\n=============================\n";
+    $emailText = "Eine neue Anfrage von PI Planning\n=============================\n";
 
     foreach ($_POST as $key => $value) {
 
